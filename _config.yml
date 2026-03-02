@@ -85,3 +85,4 @@ exclude:
   - CNAME
 
 timezone: Asia/Seoul
+future: true
