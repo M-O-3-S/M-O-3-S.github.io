@@ -1,0 +1,16 @@
+[
+  {
+    "id": "8b4f95d2881f7cb85e9a4cec16fda68e8106a913a8f4e3f5be33aa2ab667f411",
+    "title": "A Companion Robot That Roams Your Desk Until You Pet It",
+    "link": "https://www.hackster.io/news/a-companion-robot-that-roams-your-desk-until-you-pet-it-15d35ca26459",
+    "published_date": "2026-03-07T20:34:30Z",
+    "source": "Hackster News - Hackster.io",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "ESP32 기반의 로봇이 책상 주변을 자유롭게 돌아다니며 사용자에게 즐거움을 선사합니다.  이 로봇은 사용자 반응에 따라 다양한 움직임을 보여줍니다.  특히, 모바일 앱을 통해 원격으로 제어할 수 있습니다.",
+    "ai_tags": [
+      "ESP32",
+      "Robot",
+      "IoT"
+    ]
+  }
+]

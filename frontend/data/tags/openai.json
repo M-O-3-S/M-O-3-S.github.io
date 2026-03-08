@@ -1,0 +1,72 @@
+[
+  {
+    "id": "07faaf0cbb8b55f9177642975021ae0be82416fe66376dac03b065fe404e5c36",
+    "title": "오픈AI, 코딩 에이전트 관리 프레임워크 ‘심포니’ 공개…“개발자는 관리만”",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207683",
+    "published_date": "2026-03-08 17:36:45",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "오픈AI는 AI 기반 프로젝트 관리 프레임워크 ‘심포니’를 공개했습니다. 심포니는 AI 코딩 에이전트들을 체계적으로 관리하고 개발 작업을 자동화합니다. 이는 소프트웨어 개발 효율성을 크게 향상시킬 것으로 기대됩니다.",
+    "ai_tags": [
+      "AIProjectManagement",
+      "OpenAI",
+      "Symphony"
+    ]
+  },
+  {
+    "id": "e77735e7b7a7c16cafdc2612977a0e42bee743e793959923195731122a9b4213",
+    "title": "오픈AI, 챗GPT '성인 모드' 출시 또 연기",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207679",
+    "published_date": "2026-03-08 11:24:01",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "OpenAI는 챗GPT의 '성인 모드' 출시를 다시 미루고, 더 중요한 작업에 집중하기로 결정했다. 주요 작업으로는 챗GPT의 지능 향상 및 개인화 개선 등이 포함된다. 현재 연령 예측 및 청소년 보호 기능 강화에 집중하고 있다.",
+    "ai_tags": [
+      "ChatGPT",
+      "AIModeration",
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "a8a6c0874603dae38a77a4b0906f91b1bc8861e3235ae5392d30920b6157f546",
+    "title": "오픈AI 로보틱스 책임자, 미 국방부 계약에 반발해 사임",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207676",
+    "published_date": "2026-03-08 10:45:43",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "오픈AI의 미 국방부 계약 불발로 인해 케틀린 칼리노스키가 사임했습니다. 그녀는 국방부와의 협력에 충분한 논의가 이루어지지 않았다고 주장하며 문제 제기를 했습니다. 이는 오픈AI의 윤리적 문제에 대한 우려를 증폭시키고 있습니다.",
+    "ai_tags": [
+      "OpenAI",
+      "AIEthics",
+      "DefenseContract"
+    ]
+  },
+  {
+    "id": "630e1059d6d2dadc2a09f66b5b2a2c6cef38befd2340ac837751850f046d88f5",
+    "title": "Codex for Open Source",
+    "link": "https://simonwillison.net/2026/Mar/7/codex-for-open-source/#atom-everything",
+    "published_date": "2026-03-07T18:13:39+00:00",
+    "source": "Simon Willison's Weblog",
+    "category": "AI 개발도구",
+    "ai_summary": "OpenAI 발표, 오픈 소스 프로젝트 유지보수자를 대상으로 6개월 동안 ChatGPT Pro를 무료로 제공한다. Claude Max와 유사하게, 핵심 개발자에게 Codex와 보안 접근 권한도 제공될 예정이다. OpenAI는 프로젝트별 스타 수 등을 고려하여 지원 자격을 결정할 것으로 보인다.",
+    "ai_tags": [
+      "OpenAI",
+      "ChatGPT Pro",
+      "Codex"
+    ]
+  },
+  {
+    "id": "974c1239d0a36d51c1230c549ec36bd4331628083e96143b93b80bd46095ea34",
+    "title": "소프트뱅크, 오픈AI 지분 인수 위해 59조 규모 사상 최대 대출 추진",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207667",
+    "published_date": "2026-03-07 17:26:45",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "소프트뱅크가 OpenAI에 대한 투자 위해 59조원 규모의 대출을 추진 중이다. 이는 회사 역사상 최대 규모의 차입이 될 수 있으며, JP모건 체이스 등 주요 은행들과 협상 중이다. 이번 투자는 손정의 회장의 글로벌 AI 전략의 일환으로 해석된다.",
+    "ai_tags": [
+      "OpenAI",
+      "Investment",
+      "BridgeLoan"
+    ]
+  }
+]

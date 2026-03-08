@@ -1,0 +1,16 @@
+[
+  {
+    "id": "630e1059d6d2dadc2a09f66b5b2a2c6cef38befd2340ac837751850f046d88f5",
+    "title": "Codex for Open Source",
+    "link": "https://simonwillison.net/2026/Mar/7/codex-for-open-source/#atom-everything",
+    "published_date": "2026-03-07T18:13:39+00:00",
+    "source": "Simon Willison's Weblog",
+    "category": "AI 개발도구",
+    "ai_summary": "OpenAI 발표, 오픈 소스 프로젝트 유지보수자를 대상으로 6개월 동안 ChatGPT Pro를 무료로 제공한다. Claude Max와 유사하게, 핵심 개발자에게 Codex와 보안 접근 권한도 제공될 예정이다. OpenAI는 프로젝트별 스타 수 등을 고려하여 지원 자격을 결정할 것으로 보인다.",
+    "ai_tags": [
+      "OpenAI",
+      "ChatGPT Pro",
+      "Codex"
+    ]
+  }
+]

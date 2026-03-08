@@ -137,6 +137,11 @@ async function loadLatestNews() {
         if (!indexRes.ok) throw new Error('Failed to load indices');
         const indexData = await indexRes.json();
 
+        // Render Popular Tags if provided in index.json
+        if (indexData.top_tags && indexData.top_tags.length > 0) {
+            renderPopularTags(indexData.top_tags);
+        }
+
         if (indexData.available_dates && indexData.available_dates.length > 0) {
             const latestDate = indexData.available_dates[0];
             window.latestDailyTitle = `Latest AI News (${latestDate})`;
@@ -188,8 +193,9 @@ async function loadTagNews(rawTag) {
     let safeTag = rawTag.trim().toLowerCase().replace(/[^a-z0-9가-힣 \-_]/g, '').replace(/ /g, '_');
 
     try {
-        window.latestDailyTitle = `Tag: #${rawTag}`;
-        document.getElementById('view-title').textContent = window.latestDailyTitle;
+        const titleEl = document.getElementById('view-title');
+        titleEl.innerHTML = `Tag: #${rawTag} <button onclick="loadLatestNews()" class="action-btn" style="margin-left: 10px; font-size: 0.8em; padding: 4px 8px; border: 1px solid var(--accent-color);">✕ 필터 초기화</button>`;
+        window.latestDailyTitle = titleEl.textContent.trim(); // store plaintext fallback
 
         const res = await fetch(`data/tags/${safeTag}.json`);
         if (res.ok) {
@@ -362,6 +368,24 @@ function renderEmptyState(containerId, message) {
             <p>${message}</p>
         </div>
     `;
+}
+
+function renderPopularTags(tagsArray) {
+    // Generate HTML for the sidebar and mobile tags arrays
+    let html = '';
+    // Let's use alternating colors for visual variety like the mockup
+    const styles = ['tag-tech', 'tag-edge', 'tag-biz', 'tag-soc'];
+
+    tagsArray.forEach((tag, idx) => {
+        const styleClass = styles[idx % styles.length];
+        html += `<span class="tag ${styleClass}" onclick="loadTagNews('${tag}')" style="cursor: pointer;">#${tag}</span>`;
+    });
+
+    const sidebarCloud = document.querySelector('.tag-cloud');
+    const mobileCloud = document.querySelector('.mobile-tags');
+
+    if (sidebarCloud) sidebarCloud.innerHTML = html;
+    if (mobileCloud) mobileCloud.innerHTML = html;
 }
 
 // 5. Utilities

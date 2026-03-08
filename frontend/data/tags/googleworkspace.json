@@ -1,0 +1,16 @@
+[
+  {
+    "id": "e0bb7bc74c5267ea896defb4f7edd3d6276c46439b48ffbdc238205f1a0d3b27",
+    "title": "\"지메일부터 시트까지 명령어 하나로\"… 구글, 인간-에이전트 겸용 '워크스페이스 CLI' 공개",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207665",
+    "published_date": "2026-03-07 17:52:48",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "구글이 CLI 환경에서 워크스페이스를 제어하는 새로운 도구 ‘gws’를 출시했다. 이 도구는 이메일, 문서 등 다양한 앱을 명령줄 인터페이스로 관리할 수 있게 한다. 이는 AI 에이전트 시대에 CLI가 중요한 역할을 할 것임을 시사한다.",
+    "ai_tags": [
+      "GoogleWorkspace",
+      "CLI",
+      "AIAgent"
+    ]
+  }
+]

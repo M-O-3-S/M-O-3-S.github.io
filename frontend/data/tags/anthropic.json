@@ -1,0 +1,30 @@
+[
+  {
+    "id": "85a3a902cb314a5d1891ab889b18859ace0bdf0033404ec68cfa26bb98f743e0",
+    "title": "트럼프 행정부, \"모든 합법적 사용\" 허용하는 정부 AI 계약 방침 마련",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207677",
+    "published_date": "2026-03-08 11:49:53",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "미국 정부는 앤트로픽 사건을 계기로 AI 기업 계약 규정을 강화한다. 정부는 AI 모델의 사용 권한을 광범위하게 보장하는 취소 불가능한 라이선스 부여를 지침으로 제시한다. 이는 민간 AI 서비스 조달에 적용되어 정부의 AI 도입을 촉진할 것으로 예상된다.",
+    "ai_tags": [
+      "AIregulation",
+      "Governmentcontracts",
+      "Anthropic"
+    ]
+  },
+  {
+    "id": "d1233fec0dd016a0af9f6b24ad06da4fbd32be0da662dd8378f63148e0f8ee9d",
+    "title": "MS 이어 아마존·구글도 \"국방 비관련 분야는 앤트로픽 모델 계속 지원\"",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207666",
+    "published_date": "2026-03-07 12:44:02",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "아마존과 구글이 앤트로픽 기술 지원을 지속하겠다는 발표를 했습니다. 주요 클라우드 업체들이 앤트로픽 블랙리스트에 동참하면서, 변화가 예상됩니다. 국방부 관련 고객을 위한 대체 솔루션 전환 지원도 이루어집니다.",
+    "ai_tags": [
+      "Anthropic",
+      "CloudComputing",
+      "AISecurity"
+    ]
+  }
+]

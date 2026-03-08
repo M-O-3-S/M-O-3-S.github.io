@@ -1,0 +1,16 @@
+[
+  {
+    "id": "4edc49cb7e485572ee50807e1e662434611224a1aaf522ecf52fb3ba46f66df7",
+    "title": "KAIST, 약물 결합 넘어 ‘실제 활성 여부’ 예측하는 ‘신약 개발 AI’ 선보여",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207645",
+    "published_date": "2026-03-08 12:00:00",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "KAIST 연구팀이 GPCR 활성 예측 AI 모델 ‘지피씨알액트’를 개발했습니다. 이 모델은 신약 후보 물질의 결합 예측을 넘어 실제 단백질 활성화를 예측합니다. 이는 신약 개발 과정의 효율성을 높이는 데 기여할 것으로 기대됩니다.",
+    "ai_tags": [
+      "AIDrugDiscovery",
+      "GPCR",
+      "AIModel"
+    ]
+  }
+]

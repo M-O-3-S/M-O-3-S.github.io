@@ -116,8 +116,8 @@ def generate_daily_json(run_date_str):
     return len(articles)
 
 def update_index_json(new_daily_date):
-    """Maintains an index.json mapping accessible dates for the frontend."""
-    index_data = {"available_dates": []}
+    """Maintains an index.json mapping accessible dates and popular tags for the frontend."""
+    index_data = {"available_dates": [], "top_tags": []}
     
     if os.path.exists(INDEX_FILE):
         try:
@@ -136,6 +136,27 @@ def update_index_json(new_daily_date):
     # Keep only the last 90 days in index (retention policy from plan)
     dates = dates[:90]
     index_data["available_dates"] = dates
+
+    # Calculate Top 20 Tags from the last 30 days
+    conn = sqlite3.connect(database.DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT ai_tags 
+        FROM articles 
+        WHERE is_published = TRUE AND ai_tags IS NOT NULL AND published_date >= datetime('now', '-30 days')
+    ''')
+    rows = cursor.fetchall()
+    conn.close()
+
+    from collections import Counter
+    tag_counts = Counter()
+    for row in rows:
+        tags = [t.strip() for t in row[0].split(',')]
+        for t in tags:
+            if t: tag_counts[t] += 1
+            
+    top_tags = [item[0] for item in tag_counts.most_common(20)]
+    index_data["top_tags"] = top_tags
     
     with open(INDEX_FILE, 'w', encoding='utf-8') as f:
         json.dump(index_data, f, ensure_ascii=False, indent=2)
@@ -147,7 +168,7 @@ def generate_tags_json():
     cursor.execute('''
         SELECT url_hash, title, link, published_date, source, category, ai_summary, ai_tags
         FROM articles 
-        WHERE is_published = TRUE AND collected_at >= datetime('now', '-30 days')
+        WHERE is_published = TRUE AND created_at >= datetime('now', '-30 days')
     ''')
     rows = cursor.fetchall()
     conn.close()
@@ -190,7 +211,7 @@ def generate_weekly_json():
     cursor.execute('''
         SELECT url_hash, title, link, published_date, source, category, ai_summary, ai_tags
         FROM articles 
-        WHERE is_published = TRUE AND collected_at >= datetime('now', '-7 days')
+        WHERE is_published = TRUE AND created_at >= datetime('now', '-7 days')
     ''')
     rows = cursor.fetchall()
     conn.close()

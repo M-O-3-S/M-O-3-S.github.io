@@ -1,0 +1,30 @@
+[
+  {
+    "id": "7c147437f1747142f4f7c8e34e4400f770ecbfa74cfa028e072606c6771232c7",
+    "title": "LGU+, 퓨리오사AI와 기업용 ‘AI 어플라이언스’ 개발…새로운 ‘소버린 AI’ 시대 연다",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207661",
+    "published_date": "2026-03-08 09:00:00",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "LG유플러스와 퓨리오사AI가 AI 인프라 협력을 위해 MOU를 체결했습니다. 두 회사는 기업 내부에서 안전하게 사용할 수 있는 ‘소버린 AI 어플라이언스’를 공동 개발합니다. 이는 데이터 보안을 강화하고 기업의 AI 활용을 촉진하는 데 기여할 것입니다.",
+    "ai_tags": [
+      "AIInfrastructure",
+      "SovereignAI",
+      "LGU"
+    ]
+  },
+  {
+    "id": "0b3034d58c7a6c057d6fe22eff0ee5b52870aea54af668ede79294e517f04546",
+    "title": "이란, 아마존 데이터센터 공격...\"AI 시대 새로운 군사적 타깃 부각\"",
+    "link": "https://www.aitimes.com/news/articleView.html?idxno=207669",
+    "published_date": "2026-03-07 17:15:00",
+    "source": "AI타임스 - 전체기사",
+    "category": "AI 비즈니스/트렌드",
+    "ai_summary": "미국 빅테크 데이터센터가 이란의 드론 공격으로 피해를 입어 주목받고 있다. AI 기술의 핵심 인프라로서의 중요성이 부각되며 새로운 군사적 위협으로 인식되고 있다. 데이터센터의 안전 확보가 AI 시대의 지속적인 발전을 좌우할 수 있다.",
+    "ai_tags": [
+      "AIInfrastructure",
+      "Cybersecurity",
+      "MiddleEast"
+    ]
+  }
+]
