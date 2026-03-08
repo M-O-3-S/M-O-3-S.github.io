@@ -1,0 +1,57 @@
+# AI News Archive System Configuration
+
+system:
+  # 사용할 로컬 LLM 모델 (예: gemma3:4b, llama3.2 등)
+  llm_model: "gemma3:4b"
+
+schedule:
+  # 데일리 뉴스 수집 및 발송 시각 (HH:MM)
+  daily_time: "07:00"
+  # 위클리 탑 뉴스 발송 시각 ("Day HH:MM")
+  weekly_time: "Saturday 08:00"
+
+rss_feeds:
+  # 1. 엣지/임베디드 AI
+  "엣지/임베디드 AI":
+    - "https://www.edge-ai-vision.com/feed/"
+    - "https://www.embedded.com/feed/"
+    - "https://www.hackster.io/news.atom"
+    - "https://www.kdnuggets.com/feed"
+  
+  # 2. AI 개발도구
+  "AI 개발도구":
+    - "https://github.blog/feed/"
+    - "https://huggingface.co/blog/feed.xml"
+    - "https://simonwillison.net/atom/everything/"
+    - "https://newsletter.pragmaticengineer.com/feed"
+  
+  # 3. 거대 언어 모델 (LLM)
+  "거대 언어 모델 (LLM)":
+    - "https://tldr.tech/api/rss/ai"
+    - "https://bair.berkeley.edu/blog/feed.xml"
+    - "https://lastweekin.ai/feed"
+    - "https://machinelearningmastery.com/blog/feed/"
+  
+  # 4. AI 하드웨어/반도체
+  "AI 하드웨어/반도체":
+    - "https://semiengineering.com/feed/"
+    - "https://www.eetimes.com/feed/"
+    - "https://spectrum.ieee.org/feeds/feed.rss"
+    - "https://blogs.nvidia.com/feed/"
+  
+  # 5. 로보틱스/자율주행
+  "로보틱스/자율주행":
+    - "https://www.therobotreport.com/feed/"
+    - "https://www.aiweirdness.com/rss/"
+  
+  # 6. AI 비즈니스/트렌드
+  "AI 비즈니스/트렌드":
+    - "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+    - "https://www.aitimes.com/rss/allArticle.xml"
+    - "https://analyticsindiamag.com/feed/"
+  
+  # 7. AI 연구/논문
+  "AI 연구/논문":
+    - "https://rss.arxiv.org/rss/cs.AI"
+    - "https://rss.arxiv.org/rss/cs.LG"
+    - "https://aws.amazon.com/blogs/machine-learning/feed/"

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Archive - POC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- SVG Sprite Definitions -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </symbol>
+            <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </symbol>
+            <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </symbol>
+            <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </symbol>
+            <symbol id="icon-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </symbol>
+            <symbol id="icon-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="2 4 2 20 22 20 22 4 17 8 12 4 7 8 2 4"></polygon>
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>AI News Archive</h1>
+            </div>
+            <div class="nav-tabs">
+                <button class="nav-btn active" data-target="view-daily">Daily News</button>
+                <button class="nav-btn" data-target="view-weekly">Weekly Top</button>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <svg>
+                        <use href="#icon-sun"></use>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Layout Split -->
+        <div class="main-layout">
+
+            <!-- Left Sidebar (PC) / Horizontal Scroll (Mobile) -->
+            <aside class="sidebar">
+                <div class="widget calendar-widget">
+                    <h3>
+                        <button class="cal-nav">&lt;</button>
+                        <span><svg>
+                                <use href="#icon-calendar"></use>
+                            </svg> Mar 2026</span>
+                        <button class="cal-nav">&gt;</button>
+                    </h3>
+                    <div class="calendar-grid">
+                        <div class="day-name">Su</div>
+                        <div class="day-name">Mo</div>
+                        <div class="day-name">Tu</div>
+                        <div class="day-name">We</div>
+                        <div class="day-name">Th</div>
+                        <div class="day-name">Fr</div>
+                        <div class="day-name">Sa</div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date current">8</div>
+                        <div class="date future">9</div>
+                        <div class="date future">10</div>
+                        <div class="date future">11</div>
+                        <div class="date future">12</div>
+                        <div class="date future">13</div>
+                        <div class="date future">14</div>
+                        <div class="date future">15</div>
+                        <div class="date future">16</div>
+                        <div class="date future">17</div>
+                        <div class="date future">18</div>
+                        <div class="date future">19</div>
+                        <div class="date future">20</div>
+                        <div class="date future">21</div>
+                        <div class="date future">22</div>
+                        <div class="date future">23</div>
+                        <div class="date future">24</div>
+                        <div class="date future">25</div>
+                        <div class="date future">26</div>
+                        <div class="date future">27</div>
+                        <div class="date future">28</div>
+                        <div class="date future">29</div>
+                        <div class="date future">30</div>
+                        <div class="date future">31</div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>Popular Tags</h3>
+                    <div class="tag-cloud">
+                        <span class="tag tag-tech">#GenerativeAI</span>
+                        <span class="tag tag-tech">#LLM</span>
+                        <span class="tag tag-edge">#EdgeAI</span>
+                        <span class="tag tag-edge">#Robotics</span>
+                        <span class="tag tag-biz">#AIInvestment</span>
+                        <span class="tag tag-soc">#AIAct</span>
+                        <span class="tag tag-soc">#Policy</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <!-- Mobile Only Horizontal Tags -->
+                <div class="mobile-tags">
+                    <span class="tag tag-tech">#GenerativeAI</span>
+                    <span class="tag tag-edge">#EdgeAI</span>
+                    <span class="tag tag-biz">#AIInvestment</span>
+                    <span class="tag tag-soc">#AIAct</span>
+                    <span class="tag tag-tech">#LLM</span>
+                </div>
+
+                <div class="content-header">
+                    <h2 id="view-title">Latest AI News (Mar 8, 2026)</h2>
+                </div>
+
+                <!-- Shimmer Loading View (Hidden by default) -->
+                <div id="loading-view" class="loading-view hidden">
+                    <div class="loading-text">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="animation: spin 2s linear infinite;">
+                            <line x1="12" y1="2" x2="12" y2="6"></line>
+                            <line x1="12" y1="18" x2="12" y2="22"></line>
+                            <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
+                            <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
+                            <line x1="2" y1="12" x2="6" y2="12"></line>
+                            <line x1="18" y1="12" x2="22" y2="12"></line>
+                            <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
+                            <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
+                        </svg>
+                        <style>
+                            @keyframes spin {
+                                100% {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        </style>
+                        최신 뉴스를 불러오는 중입니다...
+                    </div>
+                    <div class="skeleton-box"></div>
+                    <div class="skeleton-box"></div>
+                    <div class="skeleton-box"></div>
+                </div>
+
+                <!-- Daily News Flow (Populated Dynamically via script.js) -->
+                <div id="view-daily" class="news-list"></div>
+
+                <!-- Weekly Top News Flow -->
+                <div id="view-weekly" class="news-list hidden">
+
+                    <!-- Week Navigation (New Implementation based on PRD Update) -->
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); background-color: var(--bg-secondary); padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <button class="cal-nav" style="font-weight: bold;">&larr; 이전 주 (Week 9)</button>
+                        <span style="font-size: var(--text-sm); font-weight: bold;">Week 10</span>
+                        <button class="cal-nav" style="opacity: 0.3; cursor: default;">다음 주 &rarr;</button>
+                    </div>
+
+                    <article class="news-card premium-card">
+                        <div class="rank-badge"><svg width="12" height="12">
+                                <use href="#icon-crown"></use>
+                            </svg> Top 1</div>
+                        <div class="card-header" onclick="toggleAccordion(this)">
+                            <h3>EU 인공지능법(AI Act) 공식 채택, 글로벌 규제 신호탄 쏘다</h3>
+                            <div class="card-meta">Reuters • Week 10</div>
+                            <div class="card-tags">
+                                <span class="tag tag-soc">#AIAct</span>
+                                <span class="tag tag-soc">#Policy</span>
+                            </div>
+                            <svg class="expand-icon" width="20" height="20">
+                                <use href="#icon-chevron-down"></use>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <p>유럽연합 의회가 세계 최초의 포괄적 인공지능 규제법을 최종 통과시켰다. 이 규제안은 안면 인식 금지 및 AI 생성 콘텐츠 워터마크 의무화 등 강력한 제동 장치를
+                                포함하고 있으며 글로벌 시장에 큰 파장을 일으킬 것으로 예상된다.</p>
+                            <div class="card-actions">
+                                <button class="action-btn"><svg width="14" height="14">
+                                        <use href="#icon-share"></use>
+                                    </svg> URL 복사</button>
+                                <a href="#" class="action-btn">원문 보기</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card premium-card"
+                        style="box-shadow: 0 0 0 1px transparent, 0 0 10px rgba(59, 130, 246, 0.2);">
+                        <div class="rank-badge" style="background: linear-gradient(135deg, #3B82F6, #14B8A6);"><svg
+                                width="12" height="12">
+                                <use href="#icon-crown"></use>
+                            </svg> Top 2</div>
+                        <div class="card-header" onclick="toggleAccordion(this)">
+                            <h3>거대 빅테크들의 스타트업 투자 역대 최고치 기록</h3>
+                            <div class="card-meta">Bloomberg • Week 10</div>
+                            <div class="card-tags">
+                                <span class="tag tag-biz">#AIInvestment</span>
+                                <span class="tag tag-biz">#Startups</span>
+                            </div>
+                            <svg class="expand-icon" width="20" height="20">
+                                <use href="#icon-chevron-down"></use>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <p>AI 칩 확보와 우수 인력 점유를 위해 빅테크들이 유망 AI 스타트업에 쏟아붓는 자금이 천문학적 수치를 갱신했다. 전문가들은 버블 우려와 동시에 혁신의 필수적
+                                자양분 양극화 현상을 분석하고 있다.</p>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "42b44a32a9e1a3248aa67889c1b0c44d993b7bd43b22cef3810c3b9dbf86ee90",
+    "title": "TI Accelerates the Next Generation of Physical AI with NVIDIA",
+    "link": "https://www.edge-ai-vision.com/2026/03/ti-accelerates-the-next-generation-of-physical-ai-with-nvidia/",
+    "published_date": "Fri, 06 Mar 2026 22:19:33 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "텍사스 인스트루먼트(TI)와 NVIDIA가 인간형 로봇의 안전한 실외 배포를 가속화하기 위해 협력하고 있습니다. TI의 mmWave 레이더 기술이 NVIDIA Jetson Thor 및 Holoscan과 통합되어 초저지연 3D 인식 및 안전 인식을 제공합니다. 이번 협력을 통해 물리적 AI 애플리케이션의 성능이 향상될 것으로 기대됩니다.",
+    "ai_tags": [
+      "AI Robotics",
+      "mmWave Radar",
+      "Edge AI"
+    ]
+  },
+  {
+    "id": "9f301e699511a67f90fb51aca5df76c4806292db7674acb7be77932d17cfe96c",
+    "title": "ModelCat AI Announces AI Model Portability Across Silicon Devices",
+    "link": "https://www.edge-ai-vision.com/2026/03/modelcat-ai-announces-ai-model-portability-across-silicon-devices/",
+    "published_date": "Fri, 06 Mar 2026 22:10:06 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "ModelCat의 Agentic AI는 사용자 생산 모델을 기반으로 새로운 칩 모델을 생성하여 추론 속도를 경량화합니다. 이 기술은 엣지 컴퓨팅 환경에서 AI 모델의 적용을 가속화하는 혁신적인 기능입니다. 모델 재형성은 다양한 실리콘 장치 간 AI 모델의 원활한 이동을 지원합니다.",
+    "ai_tags": [
+      "AI Model Portability",
+      "Edge AI",
+      "Autonomous Model Builder"
+    ]
+  },
+  {
+    "id": "56b824bf716d83ed31bb7f270639226c1e2b291b84237065ec162f430e0e1c90",
+    "title": "STM32U3B5/U3C5: Bringing High-Performance DSP & Edge AI to Ultralow Power Designs",
+    "link": "https://www.edge-ai-vision.com/2026/03/stm32u3b5-u3c5-bringing-high-performance-dsp-edge-ai-to-ultralow-power-designs/",
+    "published_date": "Fri, 06 Mar 2026 22:07:06 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "STM32U3B5/U3C5 마이크로컨트롤러는 Arm Cortex-M33 코어를 기반으로 설계되었습니다. 이 제품은 듀얼 뱅크 플래시 메모리와 RAM을 제공하며, 특히 DSP 및 엣지 AI 워크로드를 처리하기 위한 하드웨어 신호 프로세서(HSP)를 포함합니다. 저전력 설계에 적합한 고성능 DSP 및 엣지 AI 솔루션을 제공합니다.",
+    "ai_tags": [
+      "STM32U3",
+      "DSP",
+      "Edge AI"
+    ]
+  },
+  {
+    "id": "db13adbc2cae8374a1563a0813637f13bec576fff7b7ee5cd5599395a761ed9e",
+    "title": "Edge AI and Vision Alliance Fall 2025 Computer Vision and Perceptual AI Developer Survey (Slide Set)",
+    "link": "https://www.edge-ai-vision.com/2026/03/edge-ai-and-vision-alliance-fall-2025-computer-vision-and-perceptual-ai-developer-survey-slide-set/",
+    "published_date": "Fri, 06 Mar 2026 18:16:50 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "엣지 AI 및 비전 연맹의 2025년 가을 컴퓨터 비전 및 인지 AI 개발자 설문조사 자료가 발표되었습니다. 이 자료는 연맹 회원사 내부용으로 제공되며, Jeff Bier에게 문의할 수 있습니다. 설문조사 결과를 통해 엣지 AI 개발 동향을 파악하는 데 도움이 될 것입니다.",
+    "ai_tags": [
+      "Edge AI",
+      "Computer Vision",
+      "Developer Survey"
+    ]
+  },
+  {
+    "id": "120c4772d13f144d2c6ea699e70e78d994c7a38c52fae227033cb51175a4bfa7",
+    "title": "From ADAS to Robotaxi: How Vision Systems Must Level Up to Meet New Mobility Use Cases (Part 2)",
+    "link": "https://www.edge-ai-vision.com/2026/03/from-adas-to-robotaxi-how-vision-systems-must-level-up-to-meet-new-mobility-use-cases-part-2/",
+    "published_date": "Fri, 06 Mar 2026 09:00:55 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "이 글은 자율주행 로봇택시의 비전 시스템 요구사항을 분석합니다. 야간 운행 및 다양한 환경에서 신뢰성 있는 인식 기술이 중요하며, 통합 AI 비전 상자가 지연을 줄이는 데 기여합니다. 새로운 이동성 서비스에 맞춘 최적의 비전 시스템 구축 방안을 제시합니다.",
+    "ai_tags": [
+      "Robotaxi",
+      "Edge AI",
+      "Vision Systems"
+    ]
+  },
+  {
+    "id": "f45b5fa5858ff8e5f9168e5d215b1696d54c55beb7057ab5d51144fe01fc14aa",
+    "title": "D3 Embedded to Present Production Workflow for Custom OCR at the Edge Using Foundational Vision Encoders at Embedded World 2026",
+    "link": "https://www.edge-ai-vision.com/2026/03/d3-embedded-to-present-production-workflow-for-custom-ocr-at-the-edge-using-foundational-vision-encoders-at-embedded-world-2026/",
+    "published_date": "Thu, 05 Mar 2026 18:53:29 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "D3 Embedded 발표, 엣지 환경에서 커스텀 OCR 워크플로우를 소개합니다. 앨렉스 어베리 연구원이 ‘기반에서 공장까지’ 발표를 통해 새로운 기술을 선보입니다. 임베디드 월드 2026에서 11시 00분, [&#8230;] 세션 6.4에서 진행됩니다.",
+    "ai_tags": [
+      "OCR",
+      "Edge AI",
+      "Computer Vision"
+    ]
+  },
+  {
+    "id": "7bcfb3c26cb99cefb3c6ab3a77ccdf66389255ef13e270a8c517a4b2af81adad",
+    "title": "Accelerating Product Development in the Era of Physical AI",
+    "link": "https://www.edge-ai-vision.com/2026/03/accelerating-product-development-in-the-era-of-physical-ai/",
+    "published_date": "Thu, 05 Mar 2026 09:00:43 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "엣지 AI 시대에 AI 작업량이 물리 세계로 이동하며 변화가 일어납니다. 카메라, 로봇 등 엣지 장치가 지능형 에이전스로 진화하고 있습니다. 이는 제품 개발 속도를 가속화하는 데 중요한 역할을 합니다.",
+    "ai_tags": [
+      "Edge AI",
+      "Physical AI",
+      "Edge Devices"
+    ]
+  },
+  {
+    "id": "ff3ea620916f48d8f5390da80404b7e50fa227deb943a035ac8b1cede6587d05",
+    "title": "February 2026 Edge AI and Vision Innovation Forum Presentation Videos",
+    "link": "https://www.edge-ai-vision.com/2026/03/february-2026-edge-ai-and-vision-innovation-forum-presentation-videos/",
+    "published_date": "Wed, 04 Mar 2026 22:13:46 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "2026년 에지 AI & 비전 포럼 발표 영상이 공개되었습니다. 에지 AI 얼라이언스 회원사들의 발표 자료를 포함하고 있습니다. 이 영상은 에지 컴퓨팅 기술 혁신을 위한 중요한 자료입니다.",
+    "ai_tags": [
+      "Edge AI",
+      "Vision Innovation",
+      "Renesas"
+    ]
+  },
+  {
+    "id": "e6d9f953ee3a9a86e39dc03f4ca0c8a855e1fbf1832e761b6c1acd4ac147b0f8",
+    "title": "Airy3D and Lattice to Showcase Compact, Integrated Humanoid and Robotic 3D Vision Demo at Embedded World 2026",
+    "link": "https://www.edge-ai-vision.com/2026/03/airy3d-and-lattice-to-showcase-compact-integrated-humanoid-and-robotic-3d-vision-demo-at-embedded-world-2026/",
+    "published_date": "Wed, 04 Mar 2026 20:58:56 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "에어리3D와 레이트릭이 2026년 임베디드 월드에서 인간형 로봇용 3D 비전 솔루션을 선보입니다. 이 솔루션은 깊이 정보 획득 기술과 저전력 FPGA를 결합하여 효율적인 성능을 제공합니다. 이번 시연은 로봇 비전 분야의 혁신을 보여줄 것입니다.",
+    "ai_tags": [
+      "3D Vision",
+      "FPGA",
+      "Humanoid Robotics"
+    ]
+  },
+  {
+    "id": "bb4c24e9fedfe365dd0585e6c4dff4c156b4249adadd18e13cef1e8fce15bc43",
+    "title": "Edge AI and Vision Insights: March 4, 2026",
+    "link": "https://www.edge-ai-vision.com/2026/03/edge-ai-and-vision-insights-march-4-2026/",
+    "published_date": "Wed, 04 Mar 2026 17:23:15 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "비전-언어 모델의 활용이 증가함에 따라, 전통 AI 엔지니어들이 실용적인 응용에 적용하는 방법을 모색해야 합니다. 제타손 하드웨어 패밀리를 사용하여 VLM을 실행하는 방법을 탐구합니다. 실시간 AI 비전 솔루션을 구축하기 위한 초기 단계에 대한 통찰력을 제공합니다.",
+    "ai_tags": [
+      "Vision-Language Models",
+      "Jetson",
+      "Edge AI"
+    ]
+  },
+  {
+    "id": "c9e7baf07805f76bddbfd463aa655e9559243690ef4f3bb20e189db42d8f8220",
+    "title": "Multi-Sensor IoT architecture: inside the stack and how to scale it",
+    "link": "https://www.edge-ai-vision.com/2026/03/multi-sensor-iot-architecture-inside-the-stack-and-how-to-scale-it/",
+    "published_date": "Wed, 04 Mar 2026 09:00:30 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "다중 센서 스택은 다양한 센서 데이터를 통합하여 상황 인식을 제공하는 시스템입니다. 시각, 열, 음향 등 여러 센서가 동시에 작동하며 맥락을 이해합니다. IoT 환경에서 스케일링 방법을 제시하여 활용성을 높입니다.",
+    "ai_tags": [
+      "Multi-Sensor Stack",
+      "IoT",
+      "Edge AI"
+    ]
+  },
+  {
+    "id": "c6b319f5c82c92e1303f94338d1cbad813d5ef81cfbdecdbee025e0afa0d8f98",
+    "title": "Which Service Robots Will Dominate the Market in the Next 10 Years?",
+    "link": "https://www.edge-ai-vision.com/2026/03/which-service-robots-will-dominate-the-market-in-the-next-10-years/",
+    "published_date": "Tue, 03 Mar 2026 09:00:30 +0000",
+    "source": "Edge AI and Vision Alliance",
+    "category": "엣지/임베디드 AI",
+    "ai_summary": "서비스 로봇 시장은 물류 및 청소 로봇의 높은 수요와 낮은 기술 장벽으로 성장하고 있습니다. 특히, 주방이나 수중 로봇에 비해 전망이 밝습니다. IDTechEx의 보고서에 따르면, 향후 10년간 어떤 로봇이 시장을 지배할지 분석합니다.",
+    "ai_tags": [
+      "Service Robots",
+      "Market Analysis",
+      "Robotics"
+    ]
+  }
+]

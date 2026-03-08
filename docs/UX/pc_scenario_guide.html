@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Archive - PC UX Scenarios</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #121826;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #3B82F6;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 50px;
+        }
+
+        .scenario {
+            background-color: #1E2532;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .scenario h2 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
+            margin-top: 0;
+            color: #10B981;
+        }
+
+        .description {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .flow-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+        }
+
+        .step img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .step img:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-label {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #10B981;
+        }
+
+        .step-desc {
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 5px;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>AI News Archive</h1>
+        <div class="subtitle">💻 Desktop PC UI Scenarios Guide</div>
+
+        <!-- Scenario 1 -->
+        <div class="scenario">
+            <h2>🟢 PC 시나리오 1: 라이트/다크 테마 토글 및 넓은 리딩 뷰</h2>
+            <div class="description">
+                출근 후 데스크탑 브라우저로 접속해, 사무실 환경에 맞는 라이트 테마(Light Theme)로 전환한 뒤 쾌적하게 기사를 스캐닝하는 업무 시작 플로우입니다.
+            </div>
+
+            <div class="flow-container">
+                <div class="step">
+                    <img src="./pc_ui_mockup_light_theme.png" alt="PC Landing View Light Mode">
+                    <div class="step-label">Step 1. OS 환경에 맞춘 테마 확인 및 뷰잉</div>
+                    <div class="step-desc">상단의 테마 토글 버튼을 활용해 눈이 편한 라이트 모드로 전환 후 넓은 너비의 아코디언 카드 스캐닝</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 2 -->
+        <div class="scenario">
+            <h2>🔵 PC 시나리오 2: 사이드바 필터를 활용한 딥다이브</h2>
+            <div class="description">
+                오후 깊은 업무 집중 시간, 좌측 고정 사이드바(Sticky Sidebar)를 활용하여 특정 기술 주제에 대한 지난 동향 리포팅을 위한 탐색 플로우입니다.
+            </div>
+
+            <div class="flow-container">
+                <div class="step">
+                    <img src="./pc_ui_mockup_dark_theme_1772885436688.png" alt="PC Landing View">
+                    <div class="step-label">Step 1. 좌측 사이드바 탐색</div>
+                    <div class="step-desc">좌측의 '인기 태그 Top 20 / 칩스' 구역에서 눈에 띄는 기술 키워드(#EdgeAI 등) 클릭</div>
+                </div>
+                <div class="arrow">➔</div>
+                <div class="step">
+                    <img src="./pc_tag_filtered_ui_1772886004228.png" alt="PC EdgeAI Filtered View">
+                    <div class="step-label">Step 2. 몰아보기 뷰 갱신</div>
+                    <div class="step-desc">우측 결과만 선택된 태그의 기사들로 필터링되어 화면 이동 없이 연속적인 읽기 경험 제공</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario 3 -->
+        <div class="scenario">
+            <h2>🟡 PC 시나리오 3: 캘린더 위젯 위를 활용한 과거 조회</h2>
+            <div class="description">
+                과거의 특정 시점(예: 지난 목요일 주요 AI 발표일) 기록을 찾아보기 위해 데스크탑의 상시 캘린더 UI를 다루는 플로우입니다.
+            </div>
+
+            <div class="flow-container">
+                <div class="step">
+                    <img src="./pc_calendar_ui_1772886367596.png" alt="PC Calendar Active">
+                    <div class="step-label">Step 1 & 2. 미니 캘린더 탐색 및 즉각적 결과 노출</div>
+                    <div class="step-desc">사이드바 하단에 위치한 미니 달력 위젯에서 날짜(예: 14일)를 직접 클릭. 우측 메인 영역에 해당일 데이터 갱신.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
