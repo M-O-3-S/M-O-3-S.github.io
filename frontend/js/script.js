@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initTagListeners();
     initCalendarListeners();
+    initLogoListener(); // Added logo click listener
     loadLatestNews().then(() => {
         handleAnchorScroll();
     });
@@ -37,6 +38,18 @@ function initTheme() {
         htmlEl.setAttribute('data-theme', newTheme);
         updateIcon();
     });
+}
+
+// 1-1. Logo Event Logic
+function initLogoListener() {
+    const logo = document.getElementById('home-logo');
+    if (logo) {
+        logo.addEventListener('click', () => {
+            loadLatestNews();
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 }
 
 // 2. Accordion Card Toggle Logic
