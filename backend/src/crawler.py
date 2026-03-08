@@ -5,6 +5,7 @@ import yaml
 import os
 import time
 from datetime import datetime
+import calendar
 
 # Adjust sys.path or use relative imports if run as a module, but here we assume it's run from main.py or directly
 import database
@@ -83,6 +84,16 @@ def run_crawler():
                 title = entry.get('title', 'No Title')
                 link = entry.get('link', '')
                 
+                # Time filtering: strictly within 24 hours (86400 seconds)
+                parsed_time = entry.get('published_parsed') or entry.get('updated_parsed')
+                if parsed_time:
+                    try:
+                        timestamp = calendar.timegm(parsed_time)
+                        if time.time() - timestamp > 86400:
+                            continue  # Skip articles older than 24 hours
+                    except Exception:
+                        pass
+                        
                 # Try multiple fields for the published date
                 published_date = entry.get('published', entry.get('updated', str(datetime.now())))
                 
