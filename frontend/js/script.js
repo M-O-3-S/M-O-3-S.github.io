@@ -45,9 +45,8 @@ function initLogoListener() {
     const logo = document.getElementById('home-logo');
     if (logo) {
         logo.addEventListener('click', () => {
-            loadLatestNews();
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Hard refresh / navigate back to the base URL
+            window.location.href = window.location.pathname;
         });
     }
 }
