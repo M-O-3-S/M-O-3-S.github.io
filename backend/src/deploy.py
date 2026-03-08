@@ -64,7 +64,13 @@ def deploy_to_github():
     
     # Push
     logger.info("Pushing to remote origin...")
-    push_result = run_git_cmd(['push', 'origin', 'main']) # Assuming branch is 'main', update if 'master'
+    
+    # Get current branch
+    current_branch = run_git_cmd(['rev-parse', '--abbrev-ref', 'HEAD'])
+    if not current_branch:
+        current_branch = 'main'
+        
+    push_result = run_git_cmd(['push', 'origin', current_branch])
     
     if push_result is not None:
         logger.info("Successfully pushed to GitHub. Deployment complete!")
