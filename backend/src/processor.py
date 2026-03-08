@@ -4,6 +4,7 @@ import json
 import sqlite3
 import os
 import time
+import re
 from dotenv import load_dotenv
 import database
 
@@ -97,7 +98,13 @@ def parse_ai_response(response_text, original_title, category):
         return apply_fallback()
         
     try:
-        data = json.loads(response_text)
+        # Strip trailing/leading markdown codeblocks if Ollama wraps them
+        clean_text = response_text.strip()
+        if clean_text.startswith("```"):
+            clean_text = re.sub(r'^```(?:json)?\s*', '', clean_text)
+            clean_text = re.sub(r'\s*```$', '', clean_text)
+            
+        data = json.loads(clean_text)
         ai_summary = data.get("summary", "")
         tags_list = data.get("tags", [])
         
@@ -109,7 +116,23 @@ def parse_ai_response(response_text, original_title, category):
         if not isinstance(tags_list, list) or len(tags_list) > 5:
             tags_list = [category] # fallback for tags
             
-        ai_tags = ", ".join(tags_list[:3]) # Force max 3 tags
+        # Clean and truncate tags
+        cleaned_tags = []
+        for t in tags_list:
+            if not isinstance(t, str):
+                continue
+            # Remove special chars and spaces
+            t_clean = re.sub(r'[^a-zA-Z0-9가-힣]', '', t).strip()
+            # Truncate to 20 chars
+            if len(t_clean) > 20:
+                t_clean = t_clean[:20]
+            if t_clean and t_clean not in cleaned_tags:
+                cleaned_tags.append(t_clean)
+                
+        if not cleaned_tags:
+            cleaned_tags = [category]
+            
+        ai_tags = ", ".join(cleaned_tags[:3]) # Force max 3 tags
         
         return ai_summary, ai_tags
         
